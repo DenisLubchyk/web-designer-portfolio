@@ -149,7 +149,11 @@
                 position: absolute;
                 top: 250px;
 
-                img { width: 80%;}
+                img {
+                    width: 80%;
+                    top: -40px;
+                    position: relative;
+                }
             }
 
             .skills_container {
@@ -175,6 +179,9 @@
                 .skills_round {
                     flex-direction: column;
                     align-items: end;
+                    -webkit-justify-content: flex-end;
+                    align-items: flex-end;
+                    -webkit-align-items: flex-end;
                     margin-top: 30px;
 
                     .chart_container {
@@ -192,4 +199,31 @@
             }
         }
     }
+}
+
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .skills .skills_inner .img_container img{
+        width: 50%;
+        top: -50px;
+        left: 50px;
+        position: relative;
+    }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+    .skills .skills_inner .img_container img{
+        width: 60%;
+        top: 0px;
+        left: 50px;
+        position: relative;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .skills .skills_inner .skills_container .liner_skills .skill .title span { display: none;}
+    .skills .skills_inner .skills_container .liner_skills .skill .line {
+        width: 60%;
+        flex:unset;
+    }
+    .skills .skills_inner .skills_container .liner_skills .skill .title { width: 10%;}
 }

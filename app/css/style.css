@@ -841,6 +841,45 @@ body.noscroll {
   }
 }
 
+@media (min-width: 600px) and (max-width: 768px) {
+  .about_me .about_me_inner .title {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .about_me .about_me_inner .character_sit {
+    width: 40%;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1070px) {
+  .about_me .about_me_inner .character_sit {
+    width: 55%;
+    top: 50px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+  .about_me .about_me_inner .about_me_content .title {
+    text-align: center;
+    font-size: 20px;
+  }
+  .about_me .about_me_inner .about_me_content .description {
+    margin-top: 295px;
+  }
+  .about_me .about_me_inner .character_sit {
+    width: 50%;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
 .portfolio .portfolio_inner {
   margin-top: 140px;
 }
@@ -1296,6 +1335,8 @@ body.noscroll {
   }
   .skills .skills_inner .img_container img {
     width: 80%;
+    top: -40px;
+    position: relative;
   }
   .skills .skills_inner .skills_container {
     width: 100%;
@@ -1337,6 +1378,39 @@ body.noscroll {
   }
   .skills .skills_inner .skills_container .skills_round .chart_container:last-child {
     display: none;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+  .skills .skills_inner .img_container img {
+    width: 50%;
+    top: -50px;
+    left: 50px;
+    position: relative;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .skills .skills_inner .img_container img {
+    width: 60%;
+    top: 0px;
+    left: 50px;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .skills .skills_inner .skills_container .liner_skills .skill .title span {
+    display: none;
+  }
+  .skills .skills_inner .skills_container .liner_skills .skill .line {
+    width: 60%;
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+  .skills .skills_inner .skills_container .liner_skills .skill .title {
+    width: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
