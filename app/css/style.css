@@ -880,6 +880,12 @@ body.noscroll {
   }
 }
 
+@media (min-width: 400px) and (max-width: 490px) {
+  .about_me .about_me_inner .character_sit {
+    width: 62%;
+  }
+}
+
 .portfolio .portfolio_inner {
   margin-top: 140px;
 }
