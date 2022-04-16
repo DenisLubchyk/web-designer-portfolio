@@ -5,13 +5,33 @@ function insertChart (chart, color){
         lineCap: 'round',
         barColor: color,
         size: 150,
-        animate: 1500
+        animate: 2500
       });
 }
 $(function() {
     $('.chart').each(function(){
         insertChart($(this), $(this).data('color'))
     })
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            $('.chart').each(function(){
+                $(this).data('easyPieChart').update($(this).data('percent'));
+              })
+            return;
+          }
+          $('.chart').each(function(){
+            $(this).data('easyPieChart').update(0);
+          })
+        });
+      });
+
+      observer.observe(document.querySelector('.skills_round'));
+
+
+
+
     // $('.chart').data('easyPieChart').update(parcent)
 });
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -32,4 +52,4 @@ $(function () {
       showCursor: true,
       loop: true
     });
-  });
+});
