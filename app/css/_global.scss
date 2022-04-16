@@ -39,6 +39,17 @@ html {
     font-size: $font-sm;
     z-index: 10;
   }
+  .btn:hover {
+    position: relative;
+    top: -3px;
+  }
+  .btn.btn_portfolio:hover {
+    background: none!important;
+    color: #fc9999;
+  }
+  .btn.btn_contact:hover {
+    background:#ee9090;
+  }
   .section_name {
     font-family: Volkhov;
     font-style: normal;
