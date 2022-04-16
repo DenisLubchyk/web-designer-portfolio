@@ -158,11 +158,11 @@
         width: 62%;
     }
 }
-.transitApper {
-    transform: translateX(70%);
-    transition: 2s;
+.transitApper .description{
+    transform: translateX(50%);
+    transition: 1s;
 }
-.transitApper[data-scroll="in"] { transform: translateX(0)!important; }
+.transitApper[data-scroll="in"] .description { transform: translateX(0)!important; }
 .transitApper.title {
     @media screen and (max-width: 768px) {
         transform: translateX(-70%);
