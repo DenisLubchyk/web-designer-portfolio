@@ -1323,6 +1323,9 @@ body.noscroll {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
+    -webkit-justify-content: flex-end;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
     margin-top: 30px;
   }
   .skills .skills_inner .skills_container .skills_round .chart_container {
