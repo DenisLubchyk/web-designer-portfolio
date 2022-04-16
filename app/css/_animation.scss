@@ -1,0 +1,53 @@
+.has-fade{
+    visibility: hidden;
+}
+
+@keyframes fade-in {
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    1%{
+        visibility: visible;
+        opacity: 0;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.fade-in{
+    animation: fade-in 400ms ease-in-out forwards;
+}
+@keyframes fade-out {
+    from{
+        visibility: visible;
+        opacity: 1;
+    }
+    99%{
+        visibility: visible;
+        opacity: 0;
+    }
+    to{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.fade-out{
+    animation: fade-out 400ms ease-in-out forwards;
+}
+
+
+@keyframes headMove {
+    0%{
+        transform: rotate(-7deg);
+    }
+    100%{
+        transform: rotate(7deg);
+    }
+}
+
+.headMove{
+    animation: headMove 1.5s ease-in-out alternate infinite;
+}

@@ -1,0 +1,108 @@
+.about_me {
+    .about_me_inner {
+        margin-top: 450px;
+        position: relative;
+        display: flex;
+        justify-content: end;
+    }
+
+    .about_me_content {
+        width: 50%;
+
+        .title {
+            font-family: Volkhov;
+            font-style: normal;
+            font-weight: bold;
+            font-size: $font-med;
+            line-height: 60px;
+            letter-spacing: -0.04em;
+            color: $darkBrown;
+        }
+
+        .description{
+            color: $darkBrown;
+            font-size: $font-sm;
+            margin-top: 30px;
+        }
+
+        .btn_portfolio {
+            color: $pink;
+            border: 2px solid $pink;
+            margin-top: 30px;
+        }
+    }
+
+    img.character_sit {
+        width: 620px;
+        position: absolute;
+        top: -50px;
+        left: -20px;
+    }
+
+    .small_cloud{
+        position: absolute;
+        top: 0;
+        left: -230px;
+    }
+
+    .big_cloud {
+        position: absolute;
+        top: -400px;
+        left: 100px;
+
+        img { max-width: 400px;}
+    }
+
+    .cloud_container {
+        position: relative;
+        img{
+            position: absolute;
+        }
+        img.shadow { opacity: 0.75 }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .about_me {
+        .big_cloud {
+            position: absolute;
+            top: -80px;
+            left: unset;
+            right: 144px;
+
+            img { max-width: 140px;}
+        }
+        .small_cloud { display: none;}
+
+        .about_me_inner {
+            margin-top: 80px;
+            flex-direction: column;
+            padding: 0 10%;
+
+            .about_me_content {
+                width: 100%;
+
+                .title{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 40px;
+                }
+                .description {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-top: 320px;
+                }
+                .btn_portfolio { display: none;}
+            }
+
+            .character_sit {
+                width: 80%;
+                top: 140px;
+                left: 10%;
+            }
+        }
+    }
+}

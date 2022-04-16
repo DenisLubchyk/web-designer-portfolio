@@ -1,0 +1,298 @@
+.hero {
+    margin-top: 180px;
+
+    .hero_inner {
+        position: relative;
+    }
+
+    .hero_content {
+        width: 50%;
+
+        .title {
+            font-size: $font-extra-lg;
+            font-weight: bold;
+            font-family: Volkhov;
+            line-height: 100px;
+            letter-spacing: -0.04em;
+
+            .pink{
+                color: $pink;
+            }
+        }
+
+        .description{
+            font-size: 30px;
+            font-weight: 450px;
+            line-height: 120%;
+            letter-spacing: 0.06em;
+            margin-top: 30px;
+        }
+
+        .btn_portfolio {
+            background: $pink;
+            border: 2px solid $pink;
+            margin-top: 30px;
+        }
+
+        .media_icons {
+            margin-top:30px;
+
+
+            .media_icon img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+
+    .hero_character_with_laptop {
+        position: absolute;
+        top: -70px;
+        right: -280px;
+        width: 780px;
+        z-index: 10;
+    }
+    .clock_container{
+            position: absolute;
+            top: -85px;
+            right: 120px;
+
+            .clock{
+                position: relative;
+
+                img{
+                    position: absolute;
+                }
+
+                .clock_bg {
+                    top:3px;
+                    left:3px;
+                }
+
+                .center{
+                    top:74px;
+                    left:74px;
+                }
+
+                .arrow1 {
+                    top:36px;
+                    left:47px;
+                }
+
+                .arrow2 {
+                    top:20px;
+                    left:70px;
+                }
+                .arrow_active{
+                    position: absolute;
+                    width: 110px;
+                    height: 110px;
+                    top: 28px;
+                    left: 30px;
+
+                    .sc{
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        border-radius:50%;
+                        width: 110px;
+                        height: 110px;
+                    }
+
+                    .sc::before {
+                        content: '';
+                        position: absolute;
+                        width: 2px;
+                        height: 80px;
+                        background: linear-gradient(180deg, #E0A34C 0%, #8F6830 100%);
+                        box-shadow: 3.51065e-16px 5.73333px 11.4667px rgba(38, 28, 13, 0.387), inset -1.41986e-16px -2.31881px 2.31881px #83602C, inset 1.41986e-16px 2.31881px 2.31881px #EBAC50;
+                        border-radius: 18px;
+                        z-index: 10;
+                        top:-10px;
+                    }
+                }
+                .last {
+                    top: 77px;
+                    left: 76px;
+                }
+            }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 0px;
+
+        .hero_inner{
+            padding:0 10%;
+
+            .hero_content{
+                width: 100%;
+
+                .title {
+                    font-size: 40px;
+                    line-height: 60px;
+
+                    .pink {
+                        color: white;
+                    }
+                }
+
+                .description {
+                    margin-top: 10px;
+                    font-weight: 450;
+                    font-size: 24px;
+                    line-height: 120%;
+                }
+                button.btn.btn_portfolio {
+                    margin: 580px auto 0 auto;
+                    display: block;
+                }
+            }
+            .hero_character_with_laptop {
+                position: absolute;
+                top: 180px;
+                left: 10%;
+                width: 80%;
+            }
+
+            .media_icons {
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px)  {
+    .hero .hero_inner .hero_content { padding-left: 20px;}
+}
+@media (min-width: 600px) and (max-width: 768px)  {
+    .hero .hero_inner .hero_content .title {
+        font-size: 70px;
+        line-height: 70px ;
+    }
+}
+
+@media (min-width: 1130px) and (max-width: 1500px)  {
+    .hero .hero_character_with_laptop {
+        top: -70px;
+        right: -100px;
+        width: 60%;
+    }
+    .hero .hero_inner .clock_container { right: 220px;}
+}
+
+@media (min-width: 915px) and (max-width: 1129px)  {
+    .hero { margin-top:80px; }
+    .hero .hero_character_with_laptop {
+        top: 40px;
+        right: 0;
+        width: 50%;
+    }
+    .hero .hero_inner .clock_container{
+        top: -40px;
+        right: 265px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 914px)  {
+    .hero .hero_inner .hero_character_with_laptop{
+        top: 40px;
+        right: -40px;
+        width: 60%;
+    }
+    .hero .hero_inner .clock_container {
+        top: -80px;
+        right: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .hero_inner .hero_character_with_laptop {
+        top: 210px;
+    }
+    .hero .hero_inner .clock_container{
+        top: 160px;
+        right: 260px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero {
+        .hero_inner {
+
+            .clock_container {
+                top: 180px;
+                right: 180px;
+
+                .clock {
+                    img:first-child {
+                        width: 80px;
+                    }
+                    .clock_bg {
+                        width: 60px;
+                        left: 2px;
+                    }
+                    .center {
+                        width: 12px;
+                        top: 28px;
+                        left: 28px;
+                    }
+                    .last {
+                        width: 8px;
+                        top: 30px;
+                        left: 30px;
+                    }
+                    .arrow1{
+                        width: 25px;
+                        top: 15px;
+                        left: 18px;
+                    }
+                    .arrow2{
+                        width: 23px;
+                        top: 7px;
+                        left: 27px;
+                    }
+                    .arrow_active{
+                        position: absolute;
+                        width: 42px;
+                        height: 42px;
+                        top: 13px;
+                        left: 13px;
+
+                        .sc{
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            border-radius:50%;
+                            width: 42px;
+                            height: 42px;
+                        }
+
+                        .sc::before {
+                            width: 2px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .hero .hero_inner .hero_content button.btn.btn_portfolio {
+        margin: 500px auto 0 auto;
+    }
+}
+
+@media (max-width: 460px) {
+    .hero .hero_inner .hero_content button.btn.btn_portfolio {
+        margin: 400px auto 0 auto;
+    }
+}
+
+
