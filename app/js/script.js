@@ -53,3 +53,6 @@ $(function () {
       loop: true
     });
 });
+ScrollOut({
+    targets:".transitApper, .opacityTrans"
+})

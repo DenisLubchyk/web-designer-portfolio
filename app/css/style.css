@@ -127,6 +127,18 @@ body.noscroll {
   }
 }
 
+.opacityTrans {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.opacityTrans[data-scroll="in"] {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
 .has-fade {
   visibility: hidden;
 }
@@ -897,6 +909,25 @@ body.noscroll {
 @media (min-width: 400px) and (max-width: 490px) {
   .about_me .about_me_inner .character_sit {
     width: 62%;
+  }
+}
+
+.transitApper {
+  -webkit-transform: translateX(70%);
+          transform: translateX(70%);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.transitApper[data-scroll="in"] {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .transitApper.title {
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
   }
 }
 

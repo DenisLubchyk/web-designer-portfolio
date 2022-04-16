@@ -62,8 +62,6 @@
     }
 
 }
-
-
 @media (max-width: 768px) {
     .about_me {
         .big_cloud {
@@ -106,7 +104,6 @@
         }
     }
 }
-
 @media (min-width: 600px) and (max-width: 768px){
     .about_me {
         .about_me_inner {
@@ -125,7 +122,6 @@
         }
     }
 }
-
 @media (min-width: 769px) and (max-width: 1070px){
     .about_me {
         .about_me_inner {
@@ -136,7 +132,6 @@
         }
     }
 }
-
 @media (min-width: 400px) and (max-width: 599px){
     .about_me {
         .about_me_inner {
@@ -158,9 +153,18 @@
         }
     }
 }
-
 @media (min-width: 400px) and (max-width: 490px){
     .about_me .about_me_inner .character_sit {
         width: 62%;
+    }
+}
+.transitApper {
+    transform: translateX(70%);
+    transition: 2s;
+}
+.transitApper[data-scroll="in"] { transform: translateX(0)!important; }
+.transitApper.title {
+    @media screen and (max-width: 768px) {
+        transform: translateX(-70%);
     }
 }

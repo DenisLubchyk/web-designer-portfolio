@@ -111,3 +111,12 @@ html {
       right: -238px
     }
   }
+
+  .opacityTrans {
+    opacity: 0;
+    transition: 1s;
+  }
+  .opacityTrans[data-scroll="in"]{
+    opacity: 1 ;
+    transition-delay: 0.5s;
+  }
