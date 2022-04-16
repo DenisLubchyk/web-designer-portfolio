@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 $(function () {
     $(".hero_content .description span").typed({
-      strings:["Anastasiya Shkutnik", "Web Designer", "UX/UI designer", "Junior Specialist"],
+      strings:["Anastasiya Shkutnik", "Web Designer", "UX/UI Designer", "Junior Specialist"],
       typeSpeed: 70,
       backSpeed: 20,
       backDelay: 1500,
