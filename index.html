@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./app/js/easy-pie-chart.min.js"></script>
-    <link rel="stylesheet" href="/app/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="./app/js/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="./app/css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -40,7 +42,7 @@
                         <div class="title">
                             <span>Web Designer Based in <span class="pink">Warsaw</span></span>
                         </div>
-                        <div class="description">UX&UI designer</div>
+                        <div class="description"><span>UX&UI designer</span></div>
                         <button class="btn btn_portfolio">Portfolio</button>
                         <div class="media_icons">
                             <a href="" class="media_icon"><img src="./images/media_icons/pink/fb.png" alt=""></a>
@@ -67,11 +69,11 @@
                 </div>
             </div>
         </section>
-        <section class="about_me">
+        <section class="about_me transitApper">
             <div class="page_width">
                 <div class="about_me_inner">
                     <div class="about_me_content">
-                        <div class="title">
+                        <div class="title opacityTrans">
                             Hey! My name is Anastasia.
                             I am a web & UX/UI
                             designer based in Warsaw.
@@ -101,7 +103,7 @@
         <section class="portfolio">
             <div class="page_width">
                 <div class="portfolio_inner">
-                    <div class="section_name">
+                    <div class="section_name opacityTrans">
                         Portfolio
                     </div>
                     <div class="portfolio_content">
@@ -200,7 +202,7 @@
         </section>
         <section class="skills">
             <div class="page_width">
-                <div class="section_name">
+                <div class="section_name opacityTrans">
                     My skills
                 </div>
                 <div class="skills_inner">
@@ -243,19 +245,19 @@
                         </div>
                         <div class="skills_round">
                             <div class="chart_container">
-                                <div class="chart" data-percent="50" data-color="#E7BE77"><img src="./images/skill_sketch.png" alt="skill"></div>
+                                <div class="chart" data-percent="40" data-color="#E7BE77"><img src="./images/skill_sketch.png" alt="skill"></div>
                                 <div class="title">SKETCH</div>
                             </div>
                             <div class="chart_container">
-                                <div class="chart" data-percent="40" data-color="#DDAFBE"><img src="./images/skill_ai.png" alt="skill"></div>
+                                <div class="chart" data-percent="70" data-color="#DDAFBE"><img src="./images/skill_ai.png" alt="skill"></div>
                                 <div class="title">Adobe Illustrator</div>
                             </div>
                             <div class="chart_container">
-                                <div class="chart" data-percent="50" data-color="#7F6A63"><img src="./images/skill_pie.png" alt="skill"></div>
+                                <div class="chart" data-percent="60" data-color="#7F6A63"><img src="./images/skill_pie.png" alt="skill"></div>
                                 <div class="title">PROTO PIE</div>
                             </div>
                             <div class="chart_container">
-                                <div class="chart" data-percent="40" data-color="#A9DDE7"><img src="./images/skill_xd.png" alt="skill"></div>
+                                <div class="chart" data-percent="80" data-color="#A9DDE7"><img src="./images/skill_xd.png" alt="skill"></div>
                                 <div class="title">Adobe XD</div>
                             </div>
                         </div>
@@ -273,7 +275,7 @@
             <div class="page_width">
                 <div class="contact_inner">
                     <div class="contact_form_container">
-                        <div class="title">
+                        <div class="title opacityTrans">
                             Let's make something great together.
                         </div>
                         <div class="contact_form">
@@ -313,6 +315,6 @@
         </section>
     </div>
 
-<script src="/app/js/script.js"></script>
+<script src="./app/js/script.js"></script>
 </body>
 </html>
