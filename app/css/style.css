@@ -236,8 +236,8 @@ body.noscroll {
 }
 
 .headMove {
-  -webkit-animation: headMove 1.5s ease-in-out alternate infinite;
-          animation: headMove 1.5s ease-in-out alternate infinite;
+  -webkit-animation: headMove 2s ease-in-out alternate infinite;
+          animation: headMove 2s ease-in-out alternate infinite;
 }
 
 .header input[type="checkbox"],
@@ -1232,7 +1232,7 @@ body.noscroll {
 }
 
 .skills .skills_inner .skills_container .liner_skills .skill .title {
-  width: 35%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1255,7 +1255,7 @@ body.noscroll {
 }
 
 .skills .skills_inner .skills_container .liner_skills .skill .title span {
-  width: 65%;
+  width: 100%;
   font-family: Circular Std;
   font-style: normal;
   font-weight: 450;
@@ -1284,7 +1284,7 @@ body.noscroll {
 .skills .skills_inner .skills_container .liner_skills .skill .line span {
   display: block;
   height: 8px;
-  width: 65%;
+  width: 100%;
   background: #E7BE77;
   border-radius: 15px;
 }
