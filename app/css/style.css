@@ -973,6 +973,21 @@ body.noscroll {
   right: 0;
 }
 
+.portfolio .portfolio_content .project .preview .btn_see_more:hover {
+  background-color: #ddd;
+  color: #FC9999;
+  border: none;
+}
+
+.portfolio .portfolio_content .project .preview .btn_see_more a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.portfolio .portfolio_content .project .preview .btn_see_more:hover a {
+  color: #FC9999;
+}
+
 .portfolio .portfolio_content .project .project_name {
   font-size: 20px;
   text-align: center;
@@ -987,6 +1002,11 @@ body.noscroll {
 .portfolio .btn_group .btn_behance {
   color: #FC9999;
   border: 2px solid #FC9999;
+}
+
+.portfolio .btn_group .btn_behance:hover {
+  color: #fff;
+  background-color: #FC9999;
 }
 
 @media (max-width: 768px) {
