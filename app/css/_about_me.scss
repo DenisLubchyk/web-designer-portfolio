@@ -160,7 +160,7 @@
 }
 .transitApper .description{
     transform: translateX(50%);
-    transition: 1s;
+    transition: 2.5s;
 }
 .transitApper[data-scroll="in"] .description { transform: translateX(0)!important; }
 .transitApper.title {

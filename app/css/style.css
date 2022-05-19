@@ -915,8 +915,8 @@ body.noscroll {
 .transitApper .description {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
 }
 
 .transitApper[data-scroll="in"] .description {
