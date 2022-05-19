@@ -892,7 +892,7 @@ body.noscroll {
 @media (min-width: 400px) and (max-width: 599px) {
   .about_me .about_me_inner .about_me_content .title {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
   }
   .about_me .about_me_inner .about_me_content .description {
     margin-top: 295px;
