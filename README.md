@@ -11,7 +11,7 @@ This site is owned by Anastasiya Shuktnik - junior web designer.
 - JavaScript
 
 ### Getting Started
-[Click on link](https://denislubchyk.github.io/web-designer-portfolio/)
+[Click on link](https://denislubchyk.github.io/webDesignerPortfolio/)
 
 ### Contact
 Denis Liubchuk - dlubchyk@gmail.com
